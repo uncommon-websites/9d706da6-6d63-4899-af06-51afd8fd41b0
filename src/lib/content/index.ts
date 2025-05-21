@@ -1,7 +1,7 @@
 export const CONFIG = {
-	companyName: "Company",
-	description: "Description",
+	companyName: "XBOW",
+	description: "XBOW is an AI technology that autonomously finds and exploits vulnerabilities in software.",
 	image: "/og.png",
-	url: "https://example.com",
+	url: "https://xbow.ai",
 	fontFamily: "Inter Variable"
 };

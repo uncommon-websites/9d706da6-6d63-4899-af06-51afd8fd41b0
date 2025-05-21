@@ -11,12 +11,20 @@
 </script>
 
 <Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+	title="Find bugs before attackers do."
+	subtitle="Get real vulnerabilities in real software. Automatically."
+	imageSrc="/generated/image-a-group-of-cybersecurity-professionals-i.webp"
+	centered={false}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/ibm.com',
+		'https://logo.clearbit.com/cisco.com',
+		'https://logo.clearbit.com/siemens.com',
+		'https://logo.clearbit.com/roblox.com'
+	]}
+/>
 
 <Summary
 	generating
