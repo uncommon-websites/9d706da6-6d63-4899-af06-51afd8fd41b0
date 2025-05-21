@@ -27,107 +27,115 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Autonomous vulnerability discovery, proven in the real world"
+	text="XBOW is an AI that autonomously finds and proves actual vulnerabilities in open-source software. It doesn’t just report bugs—it demonstrates real exploits, helping organizations secure what matters most."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
+			name: "Lukas Schenk",
+			position: "Security Engineer",
+			company: "Argonix AG",
+			quote:
+				"XBOW flagged two actual vulnerabilities and proved exploitation within hours—saving us days of triage and giving us clear, actionable results. The time we got back means we can focus on strengthening our entire stack, not chasing false alarms.",
+			image:
+				"/generated/image-a-male-security-engineer-in-a-modern-off.webp"
+		},
+		{
+			name: "Mei-Lien Wu",
 			position: "CTO",
-			company: "Tech Innovations",
+			company: "Bright Startup",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
+				"XBOW uncovered a risk we missed during our internal review. Their exploit proof made it clear what was at stake—now our investors know we take security seriously, and our risk profile has never been better.",
 			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-female-cto-in-a-tech-startup-workspace.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Jasper Edel",
+			position: "IT Manager",
+			company: "Fleetwood Enterprises",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
+				"Automated testing with XBOW helped us avoid a costly retroactive patch. By catching high-impact bugs before our quarterly release, we saved thousands on remediation and compliance headaches.",
 			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-		},
-		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
-			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-male-it-manager-in-a-medium-sized-ente.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="What sets xbow apart"
+	subtitle="Each feature is designed for the harsh realities of modern software security."
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "Autonomous bug discovery",
+			description: "XBOW finds vulnerabilities in any software without rules, signatures, or manual tuning."
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "Proof, not just detection",
+			description: "Each bug comes with working exploitation and secret extraction, showing real risk, not guesswork."
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "Responsible real-world impact",
+			description: "XBOW reports vulnerabilities directly to vendors after discovery, supporting responsible open source security."
+		},
+		{
+			title: "Multi-layered attack techniques",
+			description: "Combines code analysis, disassembly and fuzzing for unmatched vulnerability coverage across stacks."
+		},
+		{
+			title: "Proven success in critical systems",
+			description: "XBOW has uncovered and exploited severe CVEs in widely used software like Scoold, benefiting real companies."
+		},
+		{
+			title: "Built for scaling security",
+			description: "Empower security teams, vendors, and bug bounty platforms to find and fix risks autonomously at scale."
 		}
 	]}
 />
 
 <UseCases
-	generating
 	title="Use Cases"
 	subtitle="Real-world applications for your business needs"
 	useCases={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
-			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "Secure open-source dependencies",
+			description: "Proactively identify and prove real vulnerabilities in the open-source components your organization depends on—before they put your business at risk.",
+			image: "/generated/image-a-diverse-security-team-gathered-around-.webp",
 			link: {
-				href: "/use-cases/workflows",
+				href: "/use-cases/open-source-security",
 				label: "Learn more"
 			}
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
+			title: "Ship trusted software releases",
+			description: "Automatically test new builds for exploitable bugs, so vendors can release updates with confidence and minimize emergency patches.",
+			image: "/generated/image-a-group-of-software-developers-in-a-cont.webp",
 			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
+				href: "/use-cases/secure-releases",
+				label: "Learn more"
 			}
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
-			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "Scale bug bounty efficiency",
+			description: "Empower bug bounty programs with autonomous vulnerability discovery—enabling researchers to focus on verification and high-priority fixes, not repetitive triage.",
+			image: "/generated/image-a-team-of-professional-bug-bounty-resear.webp",
 			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
+				href: "/use-cases/bug-bounty-automation",
+				label: "Learn more"
 			}
 		}
 	]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+  title="AI that spots real vulnerabilities before attackers do"
+  subtitle="Autonomous security that proves the risk—before it costs you."
+  description="XBOW autonomously finds and proves software exploits—saving security teams hours of triage and reducing risk across your stack. It’s already uncovered high-impact bugs in real-world systems trusted by Cisco, IBM, and others."
+  imageSrc="/generated/image-a-smiling-security-engineer-in-a-bustlin.webp"
+  callsToAction={[
+    { href: '/waitlist', label: 'Join the waitlist', variant: 'primary' },
+    { href: '/contact', label: 'Request a demo', variant: 'secondary' }
+  ]}
+/>

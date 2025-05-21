@@ -10,25 +10,43 @@
 
 	// Constants
 	const values = [
-		{
-			title: "Innovation",
-			description: "Constantly challenging the status quo to create better solutions."
-		},
-		{
-			title: "Integrity",
-			description: "Building trust through transparent actions and honest communication."
-		},
-		{
-			title: "Impact",
-			description: "Measuring our success by the positive change we create for our clients."
-		}
-	];
+  {
+    title: "Serious work. Minimal noise.",
+    description:
+      "We’re security engineers and researchers building autonomous systems that actually find real-world bugs. Not theoretical CVEs. Not lab-replicated exploits. Real code, real software, real impact."
+  },
+  {
+    title: "A product of deep engineering, not marketing",
+    description:
+      "XBOW isn’t trying to look smart—we’re trying to be effective. We’re applying advanced AI techniques, rigorous program analysis, and practical exploit building to improve how security gets done. The only hype we care about is when a fix goes out before an exploit drops."
+  },
+  {
+    title: "What it's like to work here",
+    description:
+      "We value people who think independently, work deeply, and take ownership. You’ll have real autonomy—and you’ll be expected to use it. No daily hand-holding. No endless process layers. Just meaningful problems and the room to solve them well."
+  },
+  {
+    title: "We operate on trust",
+    description:
+      "Everyone on the team has access to sensitive findings as they happen, often before a vendor is even aware. That’s only possible with a high-trust culture and strong ethics. If you want to be looped in, you’d better be accountable."
+  },
+  {
+    title: "Sharp problems. Small team.",
+    description:
+      "We lean toward highly technical people who care more about accuracy than speed, and who are motivated by solving hard problems that matter. Ship a feature, watch it produce a working exploit, and then see your fingerprint on a patch. We don’t move fast and break things. We move thoroughly and fix them."
+  },
+  {
+    title: "If you're here for the real thing",
+    description:
+      "This is not a good fit for ‘move fast, learn a little, and jump to the next thing.’ But if you’re someone who wants to work on technically deep tools with high stakes and real-world adoption—not clicky demos—you'll probably enjoy it here. We’re always open to talking to thoughtful, mission-driven technical people. If that’s you, reach out directly. No need to wait for a job post."
+  }
+];
 </script>
 
 <SecondaryHero
-	title="Solving world hunger"
-	subtitle="one step at a time"
-	imageSrc="https://source.unsplash.com/random/?people"
+	title="Autonomous exploitation. Real risk found."
+	subtitle="XBOW uses AI to find and prove critical vulnerabilities—before attackers can."
+	imageSrc="/mockups/airport-screen-1747852179412.png"
 />
 
 <!-- Story Section -->
@@ -46,57 +64,35 @@
 
 <!-- StakeholderGrid Section -->
 <StakeholderGrid
-	stakeholderType="team"
-	title="Our team."
-	subtitle="Your partners in innovation."
-	stakeholders={[
-		{
-			name: "Alex Morgan",
-			position: "Founder & CEO",
-			bio: "Started the company with a vision to transform the industry through innovative solutions.",
-			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Jamie Chen",
-			position: "Chief Design Officer",
-			bio: "Award-winning designer with a passion for creating intuitive and beautiful experiences.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80"
-		},
-		{
-			name: "Taylor Wright",
-			position: "Head of Engineering",
-			bio: "Technology enthusiast focused on building scalable systems that make a difference.",
-			image:
-				"https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-		}
-	]}
+  stakeholderType="team"
+  title="Elite talent. Proven impact."
+  subtitle="Led by experts in security and AI."
+  stakeholders={[
+    {
+      name: "Nico Waisman",
+      position: "Head of Security",
+      bio: "Internationally recognized security leader and vulnerability expert.",
+      image: "/generated/image-a-professional-headshot-of-a-male-securi.webp"
+    },
+    {
+      name: "Brendan Dolan-Gavitt",
+      position: "AI Researcher",
+      bio: "Professor, researcher, and leading authority in AI-driven security.",
+      image: "/generated/image-a-professional-headshot-of-a-male-ai-res.webp"
+    }
+  ]}
 />
 
-<StakeholderGrid
-	stakeholderType="investor"
-	title="Backed by the best."
-	subtitle="Point Nine, TSIC and others"
-	stakeholders={[
-		{
-			name: "Point Nine Capital",
-			image: "https://cdn.brandfetch.io/pointnine.com/w/400/h/400/logo?c=1id_elLz2Bd5Ej-dWo7"
-		},
-		{
-			name: "TSIC Ventures",
-			image: "https://cdn.brandfetch.io/tiny.vc/w/400/h/400/logo?c=1a2b3c4d5e"
-		},
-		{
-			name: "Sequoia Capital",
-			image: "https://cdn.brandfetch.io/sequoiacap.com/w/400/h/400/logo"
-		}
-	]}
-/>
+<!-- No investors listed for XBOW -->
 
 <!-- CTA Section -->
 <CallToAction
-	title="Ready to collaborate?"
-	subtitle="Let's create something amazing"
-	description="Join the companies already leveraging our expertise to transform their digital presence and achieve their business goals."
+  title="Work on the real problems"
+  subtitle="Security, not hype."
+  description="Open source powers the systems we depend on—and it still ships critical bugs. XBOW is building autonomous technology that finds and proves real, exploitable vulnerabilities in actual software. No manual tuning. No guesswork. Just verifiable exploit chains that stand on their own."
+  callsToAction={[
+    { href: '/waitlist', label: 'Join the waitlist', variant: 'primary' },
+    { href: 'mailto:team@xbow.ai', label: 'Contact the team', variant: 'secondary' },
+    { href: '/updates', label: 'Follow technical updates', variant: 'ghost' }
+  ]}
 />

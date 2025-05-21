@@ -39,135 +39,153 @@ Please update features according to the company's product offering. Do not remov
 		subtitle = "Choose the plan that works best for your needs",
 		tierNames = ["Starter", "Pro", "Enterprise"],
 		features = [
-			{
-				name: "Projects",
-				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Team members",
-				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Storage",
-				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "API access",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Custom domains",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Analytics",
-				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
-				}
-			},
-			{
-				name: "Support response time",
-				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
-				}
-			},
-			{
-				name: "Dedicated account manager",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
-				}
-			},
-			{
-				name: "SLA",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
-				}
-			}
-		],
+	{
+		name: "Automated vulnerability scans per month",
+		tiers: {
+			"Open Source Free": "2",
+			"Team": "20",
+			"Enterprise": "Unlimited"
+		}
+	},
+	{
+		name: "Managed responsible disclosure",
+		tiers: {
+			"Open Source Free": true,
+			"Team": true,
+			"Enterprise": true
+		}
+	},
+	{
+		name: "Integration with CI/CD pipeline",
+		tiers: {
+			"Open Source Free": false,
+			"Team": true,
+			"Enterprise": true
+		}
+	},
+	{
+		name: "Custom scan configuration",
+		tiers: {
+			"Open Source Free": false,
+			"Team": true,
+			"Enterprise": true
+		}
+	},
+	{
+		name: "Exploit proof with secret extraction",
+		tiers: {
+			"Open Source Free": true,
+			"Team": true,
+			"Enterprise": true
+		}
+	},
+	{
+		name: "API access",
+		tiers: {
+			"Open Source Free": false,
+			"Team": true,
+			"Enterprise": true
+		}
+	},
+	{
+		name: "Reporting & export (PDF/JSON)",
+		tiers: {
+			"Open Source Free": false,
+			"Team": true,
+			"Enterprise": true
+		}
+	},
+	{
+		name: "Support response time",
+		tiers: {
+			"Open Source Free": "Community Slack",
+			"Team": "4 hours",
+			"Enterprise": "1 hour"
+		}
+	},
+	{
+		name: "Dedicated account manager",
+		tiers: {
+			"Open Source Free": false,
+			"Team": false,
+			"Enterprise": true
+		}
+	},
+	{
+		name: "Custom integrations and on-premise deployment",
+		tiers: {
+			"Open Source Free": false,
+			"Team": false,
+			"Enterprise": true
+		}
+	},
+	{
+		name: "SLA/uptime guarantee",
+		tiers: {
+			"Open Source Free": false,
+			"Team": false,
+			"Enterprise": "99.9%"
+		}
+	}
+],
 		tiers = [
-			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
-				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
-				}
-			},
-			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
-				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
-				},
-				highlight: true
-			},
-			{
-				name: "Enterprise",
-				monthlyPrice: null,
-				yearlyPrice: null,
-				description: "For large organizations with specific needs",
-				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
-				],
-				cta: {
-					label: "Contact sales",
-					href: "/contact"
-				}
-			}
-		]
+	{
+		name: "Open Source Free",
+		monthlyPrice: 0,
+		yearlyPrice: 0,
+		description: "For researchers and maintainers securing public open-source projects.",
+		features: [
+			"2 automated vulnerability scans per month",
+			"Managed responsible disclosure",
+			"Exploit proof with secret extraction",
+			"Community Slack support"
+		],
+		cta: {
+			label: "Start for free",
+			href: "/signup?plan=oss-free"
+		}
+	},
+	{
+		name: "Team",
+		monthlyPrice: 499,
+		yearlyPrice: 399, // 20% savings for annual
+		description: "For security teams in growing companies using open source.",
+		features: [
+			"20 scans per month",
+			"Managed responsible disclosure",
+			"CI/CD pipeline integration",
+			"Custom scan configuration",
+			"Exploit proof with secret extraction",
+			"API access",
+			"Reporting & export",
+			"4-hour support response time"
+		],
+		highlight: true,
+		cta: {
+			label: "Start trial",
+			href: "/signup?plan=team"
+		}
+	},
+	{
+		name: "Enterprise",
+		monthlyPrice: null,
+		yearlyPrice: null,
+		description: "For vendors and organizations with critical needs and scale.",
+		features: [
+			"Unlimited automated scans",
+			"Managed responsible disclosure",
+			"All Team features",
+			"Custom integrations and on-premise deployment",
+			"1-hour support response time",
+			"Dedicated account manager",
+			"SLA/uptime guarantee (99.9%)"
+		],
+		cta: {
+			label: "Contact sales",
+			href: "/contact"
+		}
+	}
+]
 	}: {
 		title?: string;
 		subtitle?: string;
